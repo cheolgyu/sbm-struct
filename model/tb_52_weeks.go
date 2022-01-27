@@ -1,5 +1,7 @@
 package model
 
+import "math"
+
 const P3_type_LOW = "L"
 const P3_type_HIGH = "H"
 
@@ -44,5 +46,11 @@ p1 왼쪽 p2 우측 점
 */
 func Get_percent(p1_y float32, p2y float32) float32 {
 	minus := p2y - p1_y
-	return float32(float64(minus / p2y * 100))
+	chk := float32(float64(minus / p2y * 100))
+
+	// -inf error
+	if math.IsInf(float64(chk), 0) {
+		return 0
+	}
+	return chk
 }
