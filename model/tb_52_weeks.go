@@ -10,9 +10,8 @@ P1 : 움직이는 과거의 점
 P2 : 마지막일자의 점
 P3 : 찾은점
 
-P1x_Unit_type : 이동한 기간 단위 1:주, 2:월
-P1x_Unit      : 이동한 기간 값
-P3_type      : 찾은점 타입, 최고=h,최저점=l
+p1x_left = p1.x가 왼쪽으로 움직인 값, 일수
+P3_type      : 찾은점 타입, 최고=H,최저점=L
 P32y_percent : 찾은점과 현재점의 y 퍼센트
 
 p3_type:
@@ -21,8 +20,7 @@ type Tb52Weeks struct {
 	Code_id    int
 	Price_type int
 
-	P1x_Unit_type int
-	P1x_Unit      int
+	P1x_Left int
 
 	P1 P
 	P2 P
