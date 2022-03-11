@@ -1,3 +1,3 @@
-module github.com/cheolgyu/stock-write-model
+module github.com/cheolgyu/sbm-struct
 
 go 1.16
