@@ -1,7 +1,7 @@
 package model
 
 // table public.bound
-type TbReBound struct {
+type TbStatBound struct {
 	Code_id int
 
 	Cp_X1        uint

@@ -16,7 +16,7 @@ P32y_percent : 찾은점과 현재점의 y 퍼센트
 
 p3_type:
 */
-type Tb52Weeks struct {
+type TbStatPrice struct {
 	Code_id    int
 	Price_type int
 
